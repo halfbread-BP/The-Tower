@@ -1,8 +1,11 @@
 <Project Sdk="Godot.NET.Sdk/4.7.2">
+
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <TargetFramework Condition=" '$(GodotTargetPlatform)' == 'android' ">net9.0</TargetFramework>
+    <PublishAot>true</PublishAot>
     <EnableDynamicLoading>true</EnableDynamicLoading>
-    <RootNamespace>TheTower</RootNamespace>
+    <RootNamespace>Tt</RootNamespace>
   </PropertyGroup>
+
 </Project>
