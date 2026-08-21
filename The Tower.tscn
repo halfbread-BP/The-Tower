@@ -1,3 +1,17 @@
 [gd_scene format=3 uid="uid://bde5jbvw2gvev"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_koa12"]
+size = Vector2(868, 118)
+
 [node name="TheTower" type="Node2D" unique_id=1702760663]
+
+[node name="1st Floor" type="Node2D" parent="." unique_id=1055434995]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="1st Floor" unique_id=1107046425]
+position = Vector2(0, 25)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="1st Floor/StaticBody2D" unique_id=900804162]
+position = Vector2(0, 134)
+shape = SubResource("RectangleShape2D_koa12")
+
+[node name="Camera" type="Camera2D" parent="." unique_id=658167717]
